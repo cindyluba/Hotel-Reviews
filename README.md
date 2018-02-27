@@ -26,3 +26,14 @@ def getTime(item):
 for i in range(tsLen):
     train_data["Date"][i]=getDate(train_data["date_time"][i])
     train_data["Time"][i]=getTime(train_data["date_time"][i])
+#Re Ids the obeservations 1 to 9999999
+c = []
+def createid():
+    b = 1
+    for i in range(1000000):
+        c.append(b)
+        b = b + 1
+    print(c[16])
+
+#createid()
+#train["ID"] = c
